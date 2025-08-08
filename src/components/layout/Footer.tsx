@@ -86,7 +86,7 @@ export const Footer = () => {
                
             </motion.div>
 <div className="text-sm text-muted-foreground mt-4 md:mt-0">
-  © SmartCalc+. All rights reserved.
+  © 2025 SmartCalc+. All rights reserved.
 </div>
           </div>
         </div>
