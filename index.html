@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="manifest" href="/manifest.json">
+    <!-- PWA Support -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="SmartCalc+">
+    <link rel="apple-touch-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="167x167" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#6366F1">
+    <title>SmartCalc+ | Smart Calculations for Brilliant Minds</title>
+    <meta name="description" content="Plateforme de calculs académiques LMD pour USTO-MB. Calculateurs GPA, ressources éducatives, et outils spécialisés pour étudiants en informatique." />
+    <meta name="keywords" content="LMD, GPA, calcul moyenne, USTO-MB, informatique, université, semestre, année, notes" />
+    <meta name="author" content="Tayeb Bekkouche & Ilyes Bakkar" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="French" />
+
+    <meta property="og:title" content="SmartCalc+ | Calculs LMD pour USTO-MB" />
+    <meta property="og:description" content="Plateforme de calculs académiques LMD pour USTO-MB. Calculateurs GPA, ressources éducatives, et outils spécialisés pour étudiants en informatique." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://smartcalcplus.vercel.app" />
+    <meta property="og:image" content="https://smartcalcplus.vercel.app/favicon.ico" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="SmartCalc+" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SmartCalc+ | Calculs LMD pour USTO-MB" />
+    <meta name="twitter:description" content="Plateforme de calculs académiques LMD pour USTO-MB. Calculateurs GPA, ressources éducatives." />
+    <meta name="twitter:image" content="https://smartcalcplus.vercel.app/favicon.ico" />
+    <meta name="twitter:creator" content="@tayebbekkouche" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0000000000000000" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <script>
+      // Register service worker for PWA functionality
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
