@@ -93,8 +93,8 @@ export const modulesDataL2 = {
         coeff: 1,
         modules: [
           {
-            code: "ANALYSE3",
-            name: "Analyse 3",
+            code: "ANGLAIS3",
+            name: "Anglais 3",
             coeff: 1,
             credit: 2,
             has_td: false,
