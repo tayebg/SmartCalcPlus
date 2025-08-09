@@ -57,7 +57,7 @@ const features = [
 ];
 
 const stats = [
-  { value: '50K+', label: 'Students', icon: Users },
+  { value: '1K+', label: 'Students', icon: Users },
   { value: '99.9%', label: 'Uptime', icon: Zap },
   { value: '100%', label: 'Secure', icon: Shield },
   { value: '4.9/5', label: 'Rating', icon: Star },
