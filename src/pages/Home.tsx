@@ -25,8 +25,12 @@ const features = [
     color: 'from-blue-500 to-blue-600',
   },
   {
-    icon: BookOpen,
-    title: 'Rich Library',
+   icon: BookOpen,
+    title: (
+      <Link to="/drives" className="hover:text-primary transition-smooth">
+        Drives
+      </Link>
+    ),
     description: 'Comprehensive collection of educational resources',
     color: 'from-green-500 to-green-600',
   },
