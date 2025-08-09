@@ -10,10 +10,17 @@ import { WelcomeModal } from '@/components/modals/WelcomeModal';
 import { TutorialsModal } from '@/components/modals/TutorialsModal';
 // import AdBanner from '@/components/AdBanner'; // Temporarily disabled (AdSense approval pending)
 
+import { Link } from "react-router-dom";
+import { Calculator, BookOpen, Video, MapPin } from "lucide-react";
+
 const features = [
   {
     icon: Calculator,
-    title: 'Smart Calculations',
+    title: (
+      <Link to="/calculs" className="hover:text-primary transition-smooth">
+        Calculations
+      </Link>
+    ),
     description: 'Advanced calculation tools for all academic levels',
     color: 'from-blue-500 to-blue-600',
   },
@@ -25,13 +32,21 @@ const features = [
   },
   {
     icon: Video,
-    title: 'Video Tutorials',
+    title: (
+      <Link to="/videos" className="hover:text-primary transition-smooth">
+        Videos
+      </Link>
+    ),
     description: 'Interactive learning through visual content',
     color: 'from-purple-500 to-purple-600',
   },
   {
     icon: MapPin,
-    title: 'Learning Roadmap',
+    title: (
+      <Link to="/roadmap" className="hover:text-primary transition-smooth">
+        Roadmap
+      </Link>
+    ),
     description: 'Structured path to academic excellence',
     color: 'from-orange-500 to-orange-600',
   },
@@ -43,6 +58,7 @@ const stats = [
   { value: '100%', label: 'Secure', icon: Shield },
   { value: '4.9/5', label: 'Rating', icon: Star },
 ];
+
 
 export const Home = () => {
   const [showWelcomeModal, setShowWelcomeModal] = useState(false);
